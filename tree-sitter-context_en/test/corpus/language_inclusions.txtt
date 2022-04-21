@@ -1,0 +1,225 @@
+
+
+
+
+
+======
+language_inclusions-metapost_inclusion
+======
+
+\startMPinclusions
+
+draw(0,0)--(1,1);
+
+\stopMPinclusions
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (MPinclusions_inclusion
+      (code_MPinclusions_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+language_inclusions-metapost_graphic
+======
+
+\startuseMPgraphic
+
+draw(0,0)--(1,1);
+
+\stopuseMPgraphic
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (useMPgraphic_inclusion
+      (code_useMPgraphic_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+language_inclusions-metapost_reusable_graphic
+======
+
+\startreusableMPgraphic
+
+draw(0,0)--(1,1);
+
+\stopreusableMPgraphic
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (reusableMPgraphic_inclusion
+      (code_reusableMPgraphic_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+
+======
+language_inclusions-metapost_mp_code
+======
+
+\startMPcode
+
+draw(0,0)--(1,1);
+
+\stopMPcode
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (MPcode_inclusion
+      (code_MPcode_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+language_inclusions-metapost_mp_page
+======
+
+\startMPpage
+
+draw(0,0)--(1,1);
+
+\stopMPpage
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (MPpage_inclusion
+      (code_MPpage_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+
+======
+language_inclusions-metapost_static_mp_figure
+======
+
+\startstaticMPfigure
+
+draw(0,0)--(1,1);
+
+\stopstaticMPfigure
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (staticMPfigure_inclusion
+      (code_staticMPfigure_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+
+
+
+======
+language_inclusions-tikz
+======
+
+\starttikzpicture
+
+draw(0,0)--(1,1);
+
+\stoptikzpicture
+
+Foo
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (tikzcode_inclusion
+      (code_tikz_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+
+
+
+======
+language_inclusions-lua
+======
+
+\startluacode
+
+print("Hello World")
+
+\stopluacode
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (luacode_inclusion
+      (code_lua_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+
+

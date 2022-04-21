@@ -1,0 +1,41 @@
+======
+command_group-simple_command_group
+======
+
+\start \stop
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command_group)
+    (text_block
+      (text)
+    )
+  ) 
+)
+
+======
+command_group-nested_command_group
+======
+
+\start \start \stop \stop
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command_group
+      (command_group)
+    )
+    (text_block
+      (text)
+    )
+  ) 
+)

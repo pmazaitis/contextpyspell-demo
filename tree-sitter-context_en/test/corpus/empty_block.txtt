@@ -1,0 +1,45 @@
+======
+empty_block-empty_block
+======
+
+\blank[]
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+      (empty_block)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+empty_block-empty_block_with_whitespace
+======
+
+\blank[ ]
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+      (empty_block)
+    )
+    (text_block
+      (text)
+    )
+  )
+)

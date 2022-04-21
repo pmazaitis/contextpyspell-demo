@@ -1,0 +1,183 @@
+
+======
+typing_inclusions-unnamed
+======
+
+\starttyping
+
+Cow.
+
+\stoptyping
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (typing_unnamed_inclusion
+      (typing_unnamed_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+
+======
+typing_inclusions-mp
+======
+
+\startMP
+
+draw (0,0)--(1,1);
+
+\stopMP
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (typing_mp_inclusion
+      (typing_mp_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+typing_inclusions-html
+======
+
+\startHTML
+
+<p>Cow.</p>
+
+\stopHTML
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (typing_html_inclusion
+      (typing_html_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+typing_inclusions-css
+======
+
+\startCSS
+
+p {color: red;}
+
+\stopCSS
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (typing_css_inclusion
+      (typing_css_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+typing_inclusions-lua
+======
+
+\startLUA
+
+print("Hello world!")
+
+\stopLUA
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (typing_lua_inclusion
+      (typing_lua_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+typing_inclusions-xml
+======
+
+\startXML
+
+<p>Cow.</p>
+
+\stopXML
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (typing_xml_inclusion
+      (typing_xml_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+typing_inclusions-parsedxml
+======
+
+\startPARSEDXML
+
+<p>Cow.</p>
+
+\stopPARSEDXML
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (typing_parsedxml_inclusion
+      (typing_parsedxml_body)
+    )
+    (text_block
+      (text)
+    )
+  )
+)

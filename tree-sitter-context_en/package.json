@@ -1,0 +1,30 @@
+{
+  "name": "tree-sitter-context",
+  "version": "0.5.0",
+  "description": "ConTeXt grammar for tree-sitter",
+  "main": "bindings/node",
+  "author": "Paul Mazaitis <paul@mazaitis.org>",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.15.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.6"
+  },
+  "scripts": {
+    "test": "tree-sitter test"
+  },
+  "tree-sitter": [
+    {
+      "scope": "text.tex.context",
+      "file-types": [
+        "tex",
+        "ctx",
+        "mkiv",
+        "mkxl"
+      ],
+      "content-regex": "/\\start(text|component)/",
+      "injection-regex": "context"
+    }
+  ]
+}

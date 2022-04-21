@@ -1,0 +1,42 @@
+======
+comment-comment_only
+======
+
+%comment
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (line_comment)
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+comment-command_comment
+======
+
+\blank %comment
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+      (line_comment)
+    )
+    (text_block
+      (text)
+    )
+  )
+)

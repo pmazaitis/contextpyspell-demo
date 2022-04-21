@@ -1,0 +1,137 @@
+
+======
+options-option_block_with_one_keyword
+======
+
+\blank[one]
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+      (option_block
+        (keyword)
+      )
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+options-option_block_with_two_keywords
+======
+
+\blank[one,two]
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+      (option_block
+        (keyword)
+        (keyword)
+      )
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+options-option_block_with_two_keywords_and_whitespace
+======
+
+\blank[one,
+       two
+       ]
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+      (option_block
+        (keyword)
+        (keyword)
+      )
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+options-multiple_option_blocks_with_one_keyword
+======
+
+\blank[one][two]
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+      (option_block
+        (keyword)
+      )
+      (option_block
+        (keyword)
+      )
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+options-multiple_option_blocks_with_two_keywords
+======
+
+\blank[one,two][three,four]
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+      (option_block
+        (keyword)
+        (keyword)
+      )
+      (option_block
+        (keyword)
+        (keyword)
+      )
+    )
+    (text_block
+      (text)
+    )
+  )
+)

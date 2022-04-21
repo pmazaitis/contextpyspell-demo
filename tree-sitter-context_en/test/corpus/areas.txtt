@@ -1,0 +1,117 @@
+======
+areas-all_areas
+======
+
+\starttext
+
+\blank
+
+\stoptext
+
+---
+
+(document
+  (preamble
+    (text_block
+      (text)
+    )
+  )
+  (main
+    (command
+      (command_name)
+    )
+    (text_block
+      (text)
+    )
+  )
+  (postamble
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+areas-main_only
+======
+
+\blank
+
+---
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+        (command_name)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
+
+======
+areas-preamble_main
+======
+
+\starttext
+
+\blank
+
+---
+
+; This is expected misparse - this parser claims this is a broken document.
+
+(document
+  (preamble
+    (text_block
+      (text)
+    )
+  )
+  (main
+    (command
+      (command_name)
+    )
+    (text_block
+      (text)
+    )
+  )
+  (postamble
+    (MISSING "\stoptext")
+  )
+)
+
+======
+areas-main_postamble
+======
+
+\blank
+
+\stoptext
+
+---
+
+; This is expected misparse - this parser claims this is a broken document.
+
+(document
+  (main
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+    )
+    (text_block
+      (text)
+    )
+    (command
+      (command_name)
+    )
+    (text_block
+      (text)
+    )
+  )
+)
