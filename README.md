@@ -6,11 +6,11 @@ A quick demo of a format-aware spellchecker for ConTeXt using tree-sitter-contex
 
 Clone or download this repo (possibly in a pyenv environment).
 
-Install the tree-sitter dependency (using pip in this example):
+Install the `tree-sitter` dependency (using pip in this example):
 
     pip3 install tree_sitter
 
-Install the cyhunspell dependency (using pip in this example):
+Install the `cyhunspell` dependency (using pip in this example):
 
     pip3 install cyhunspell
     
@@ -24,15 +24,15 @@ This demo will display the computed syntax tree of the input file, followed by a
 
 As an example, running this:
 
-    python contextpyspell-demo.py example_files/cow.tex
+    python contextpyspell-demo.py example_files/hello_world.tex
     
 ...should yield this:
 
-    Concrete syntax tree for example_files/cow.tex
+    Concrete syntax tree for example_files/hello_world.tex
     (document (preamble) (main (text_block (text) (paragraph_mark))) (postamble (text_block (text))))
 
-    Found mispelled word: Cuw. on line 2
-    Possible corrections: ('Cu', 'Cu w', 'Cue', 'Cw', 'Caw', 'Cur', 'Cut', 'Cow', 'Cud', 'Cum', 'Cup', 'Cub')
+    Found mispelled word: wurld! on line 2
+    Possible corrections: ('world',)
 
 ## Limitations
 
