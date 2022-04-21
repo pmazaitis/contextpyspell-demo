@@ -37,15 +37,15 @@ def get_cli_arguments():
 def initialize_tree_sitter():
     Language.build_library(
       # Store the library in the `build` directory
-      '../build/my-languages.so',
+      './build/my-languages.so',
     
       # Include one or more languages
       [
-        '../vendor/tree-sitter-context_en',
+        'tree-sitter-context_en',
       ]
     )
 
-    CONTEXT_LANGUAGE = Language('../build/my-languages.so', 'context')
+    CONTEXT_LANGUAGE = Language('./build/my-languages.so', 'context')
     
     parser = Parser()
     parser.set_language(CONTEXT_LANGUAGE)
