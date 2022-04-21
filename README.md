@@ -1,10 +1,10 @@
 # contextpyspell-demo.py
 
-A quick demo of a format-aware spellchecker for ConTeXt using tree-sitter-context_en
+A quick demo of a format-aware spellchecker for ConTeXt using tree-sitter-context_en written in Python.
 
 ## Installation
 
-Clone or download this repo (possibly in a pyenv environment).
+Clone or download this repo (possibly in a Python virtual environment).
 
 Install the `tree-sitter` dependency (using pip in this example):
 
